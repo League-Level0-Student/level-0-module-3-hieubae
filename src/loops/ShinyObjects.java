@@ -5,15 +5,19 @@ package loops;
 
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import javax.swing.JOptionPane;
 
 
 public class ShinyObjects {
 	public static void main(String[] args) {
 
 		// 2. Ask the user how many shiny objects they want
-
+String num = JOptionPane.showInputDialog(null, "How many shiny objects do you want?");
+int objects = Integer.parseInt(num);
 		// 3. Play the sound that many times
-
+for (int i = 0; i < objects; i++) {
+	playMisterZee();
+}
 		// 1. Call the method below
 
 	}
